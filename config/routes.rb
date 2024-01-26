@@ -14,4 +14,11 @@ Rails.application.routes.draw do
 
   get '/specials', to: 'page#specials', as: 'specials'
   get '/hours', to: 'page#hours', as: 'hours'
+  get '/greeter', to: 'main#greeter'
+  get '/cubed/:num', to: 'main#cubed'
+  get '/evenly/:num1/:num2', to: 'main#evenly'
+  get '/palindrome/:str', to: 'main#palindrome'
+  get '/random/:num1/:num2', to: 'main#random'
+  get '/madlib/:str1/:str2/:str3/:str4/:str5', to: 'main#madlib'
+
 end
